@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey Form</title>
+    <style>
+        div{
+            margin:auto;
+            background:white;
+            width:500px;
+            height:500px;
+            padding:50px;
+        }
+        h1{
+            color:white;
+        }
+    </style>
+</head>
+<body bgcolor="blue">
+    
+    <h1 align="center">Customer Survey Form</h1>
+    <div>
+    <form>
+      <table>
+        <td>
+           First Name: 
+        </td>
+        <td>
+           <input type="text" placeholder="First Name" value="">
+
+        </td>
+        </tr>
+        <tr>
+            <td>
+              Last Name:  
+            </td>
+            <td>
+                <input type="text" placeholder="Last Name" value="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Date of Birth: 
+            </td>
+            <td>
+                <input type="date" id="dob" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Country:
+            </td>
+            <td>
+                <select id="country" required>
+                    <option value="">Select a country</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="india">India</option>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            Gender:
+            </td>
+            <td>
+               <input type="checkbox" id="male" name="gender" value="Male">Male &nbsp;&nbsp;
+               <input type="checkbox" id="female" name="gender" value="Female">Female
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Profession:
+            </td>
+            <td>
+                <input type="text" placeholder="Profession"> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email:
+            </td>
+            <td>
+                <input type="text" placeholder="Email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Mobile Number:
+            </td>
+            <td>
+                <input type="text" placeholder="Mobile Number" maxlength="10">
+            </td>
+        </tr>
+        
+      </table>
+      
+      <span>Is this first time you are using our products&services?</span><br>
+   <form> <input type="radio" id="2" name="status">Yes &nbsp;&nbsp;<input type="radio" id="1" name="status">No</form><br>
+    
+    <span>Would you suggestion to your friends and colleague?</span><br>
+    <form><input type="radio" id="2" name="gender" value="option">Yes &nbsp;&nbsp;<input type="radio" id="1" name="gender" value="option">No</form><br>
+    <span>How satisfied are you with our company overall?</span><br>
+    <form><input type="radio" id="2" name="gender" value="option">Yes &nbsp;&nbsp;<input type="radio" id="1" name="gender" value="option">No</form><br>
+   <span>Do you have suggestions to improve our service?</sapn><br>
+    <textarea rows="4" cols="60"></textarea><br>
+
+    <a> <input type="submit" onclick="return confirm('Are you sure?')" /></a> &nbsp;&nbsp;
+    <input type="reset">
+      
+
+    </form>
+    </div><br><br>
+    <center><font color="white">@2018 Customer Survey Form.All Rights Reserved | Design by</font><font color="black"> W3Layouts</font></center>
+</body>
+</html>
